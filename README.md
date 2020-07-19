@@ -15,7 +15,8 @@ Utilizar para los proyectos la rama `customization-dolmedo`
 1. Seguir las [instrucciones de instalación del repo original](https://github.com/rino7/Laravel-AdminLTE/tree/master#2-installation)
 2. [Habilitar el uso de laravel-mix](https://github.com/jeroennoten/Laravel-AdminLTE#610-laravel-mix)
 3. Instalar package translation español: `composer require laraveles/spanish`
-4. Cambiar local en `config/app.php` a `locale => 'es'`
+
+4. Cambiar local en `config/app.php` a `locale => 'es'` y `'timezone' => 'America/Argentina/Buenos_Aires'`
 5. Cambiar los extends de los auth/views `https://github.com/jeroennoten/Laravel-AdminLTE#54-authentication-views`
 6. Agregar archivos `public/js/{project}.js` y `public/css/{project}.css` 
 7. Cambiar los nombres en `config/adminlte.php` (sección plugins)
