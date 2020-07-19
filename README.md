@@ -15,11 +15,12 @@ Utilizar para los proyectos la rama `customization-dolmedo`
 1. Seguir las [instrucciones de instalación del repo original](https://github.com/rino7/Laravel-AdminLTE/tree/master#2-installation)
 2. [Habilitar el uso de laravel-mix](https://github.com/jeroennoten/Laravel-AdminLTE#610-laravel-mix)
 3. Instalar package translation español: `composer require laraveles/spanish`
-
 4. Cambiar local en `config/app.php` a `locale => 'es'` y `'timezone' => 'America/Argentina/Buenos_Aires'`
 5. Cambiar los extends de los auth/views `https://github.com/jeroennoten/Laravel-AdminLTE#54-authentication-views`
 6. Agregar archivos `public/js/{project}.js` y `public/css/{project}.css` y cambiar los nombres en `config/adminlte.php` (sección plugins)
-7. Copiar las views al `public/vendor`con el comando `php artisan adminlte:install --only=main_views` [ver](https://github.com/jeroennoten/Laravel-AdminLTE#8-customize-views)
+7. 
+- Copiar las views al `public/vendor`con el comando `php artisan adminlte:install --only=main_views` [ver](https://github.com/jeroennoten/Laravel-AdminLTE#8-customize-views)
+- Instalar plugin icheckBootstrap `php artisan adminlte:plugins install --plugin=icheckBootstrap`
 8. Gracias al uso de larave-mix, se pueden overridear los colores que trae por defecto AdminLTE. Se hace editando el archivo `resources/sass/_variables.scss`. 
 9. Ejemplo:
 ```css
