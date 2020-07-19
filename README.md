@@ -18,8 +18,8 @@ Utilizar para los proyectos la rama `customization-dolmedo`
 
 4. Cambiar local en `config/app.php` a `locale => 'es'` y `'timezone' => 'America/Argentina/Buenos_Aires'`
 5. Cambiar los extends de los auth/views `https://github.com/jeroennoten/Laravel-AdminLTE#54-authentication-views`
-6. Agregar archivos `public/js/{project}.js` y `public/css/{project}.css` 
-7. Cambiar los nombres en `config/adminlte.php` (sección plugins)
+6. Agregar archivos `public/js/{project}.js` y `public/css/{project}.css` y cambiar los nombres en `config/adminlte.php` (sección plugins)
+7. Copiar las views al `public/vendor`con el comando `php artisan adminlte:install --only=main_views` [ver](https://github.com/jeroennoten/Laravel-AdminLTE#8-customize-views)
 8. Gracias al uso de larave-mix, se pueden overridear los colores que trae por defecto AdminLTE. Se hace editando el archivo `resources/sass/_variables.scss`. 
 9. Ejemplo:
 ```css
